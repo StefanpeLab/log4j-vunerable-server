@@ -32,6 +32,7 @@ public class Logging extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase","true");
 		logger.trace("Entering application...");
 
 		logger.info("Hello Log4j2...");
