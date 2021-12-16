@@ -10,7 +10,7 @@ public class log4jpoc {
     static {
         try {
             System.out.println("Exploited");
-            File myObj = new File("testfile.txt");
+            File myObj = new File("/tmp/testfile.txt");
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
             if (myObj.createNewFile()) {
               System.out.println("File created: " + myObj.getName());
@@ -18,7 +18,7 @@ public class log4jpoc {
             } else {
               System.out.println("File already exists, writing timestamp to it");
               BufferedWriter out = new BufferedWriter(
-                      new FileWriter("testfile.txt", true));
+                      new FileWriter("/tmp/testfile.txt", true));
               
               out.write(timestamp+"\n");
               out.newLine();
