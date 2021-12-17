@@ -5,12 +5,6 @@ This repo has the source for a sample Java app that suffers from CVE-2201-4428.
 Follow [this blog](https://ankurkatiyar0.wixsite.com/legosamurai/post/cve-2021-44228-proof-of-concept-on-kubernetes) to understand how all of this is tied together.
 
 #
-## Instructions
-
-The main repo to refer is [GitHub Repo - log4j-docker](https://github.com/ankur-katiyar/log4j-docker)
-
-
-#
 ## Vulnerability
 
 Apache Log4j is a Java-based logging utility. It is part of the Apache Logging Services, a project of the Apache Software Foundation. Log4j is one of several Java logging frameworks.
@@ -19,7 +13,6 @@ Apache Log4j2 2.0-beta9 through 2.12.1 and 2.13.0 through 2.15.0 JNDI features u
 <br/><br/>
 
 ![](https://www.govcert.ch/blog/zero-day-exploit-targeting-popular-java-library-log4j/assets/log4j_attack.png) 
-
 
 #
 ## Authors
