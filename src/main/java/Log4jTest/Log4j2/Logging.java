@@ -38,7 +38,7 @@ public class Logging extends HttpServlet {
 		logger.info("Hello Log4j2...");
 		//logger.error("Something is wrong with this code", new Exception("Invalid message"));
 		logger.info("User-Agent: --- "+request.getHeader("User-Agent"));
-		logger.info("Hi" + System.getProperty("jndiUrl"));
+		logger.info(System.getProperty("jndiUrl"));
 		//logger.info("${jndi:ldap://log4shell.huntress.com:1389/457a238d-91cc-44a1-9976-234aa0e22248}");
 		logger.trace("Exiting application...");
 		response.getWriter().append("Served At: ").append(request.getContextPath());
