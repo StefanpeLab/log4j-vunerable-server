@@ -17,6 +17,7 @@ Apache Log4j2 2.0-beta9 through 2.12.1 and 2.13.0 through 2.15.0 JNDI features u
 #
 ## Authors
 - **[@ankur-katiyar](https://www.github.com/ankur-katiyar)**
+- **[@ishan-saiwal](https://www.github.com/ishan-saiwal)**
 
 ## Resources
  - [CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228)
